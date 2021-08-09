@@ -39,7 +39,9 @@
 
             h2 {
                 margin-bottom: 12px;
+                font-size: 1rem;
                 span {
+                    margin-left: 4px;
                     color: $dark_gray;
                     font-weight: 400;
                 }
@@ -54,7 +56,7 @@
     .underline {
         width: 100%;
         color: $dark_gray;
-        opacity: 0.3;
+        opacity: 0.2;
     }
 
     .card_stats {
@@ -63,12 +65,14 @@
         flex-direction: row;
 
         .stat_block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
             padding: 20px;
             text-align: center;
 
             h3 {
                 font-size: 1rem;
-                margin-bottom: 8px;
             }
 
             p {
