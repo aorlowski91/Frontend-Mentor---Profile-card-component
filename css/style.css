@@ -1,0 +1,176 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  background-color: #19a2ae;
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-blend-mode: normal;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 45vh right 50vw, top 45vh left 50vw;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.container footer p {
+  line-height: 20px;
+  color: whitesmoke;
+}
+
+.container footer a {
+  color: whitesmoke;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+
+.container footer a:hover {
+  color: #2d3248;
+}
+
+@media screen and (max-width: 768px) {
+  .container footer {
+    font-size: 0.7rem;
+  }
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 375px;
+  margin: auto 25px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 20px -9px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 1px 20px -9px rgba(0, 0, 0, 0.6);
+}
+
+.card .card_bg {
+  width: 100%;
+  height: 140px;
+  border-radius: 20px 20px 0px 0px;
+  background-image: url("../images/bg-pattern-card.svg");
+}
+
+.card .card_img img {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 6px solid white;
+  border-radius: 50%;
+}
+
+.card .card_name {
+  height: 150px;
+  text-align: center;
+}
+
+.card .card_name .name_text {
+  font-size: 0.7rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card .card_name .name_text h2 {
+  margin-bottom: 12px;
+}
+
+.card .card_name .name_text h2 span {
+  color: #969696;
+  font-weight: 400;
+}
+
+.card .card_name .name_text p {
+  color: #969696;
+}
+
+.card .underline {
+  width: 100%;
+  color: #969696;
+  opacity: 0.3;
+}
+
+.card .card_stats {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card .card_stats .stat_block {
+  padding: 20px;
+  text-align: center;
+}
+
+.card .card_stats .stat_block h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.card .card_stats .stat_block p {
+  font-size: 0.5rem;
+  letter-spacing: 2px;
+  color: #969696;
+}
+/*# sourceMappingURL=style.css.map */
