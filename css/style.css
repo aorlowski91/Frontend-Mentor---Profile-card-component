@@ -115,17 +115,23 @@ picture {
 }
 
 .card .card_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   height: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
 .card .card_name .name_text {
   font-size: 0.7rem;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin-top: 50px;
 }
 
 .card .card_name .name_text h2 {
@@ -171,7 +177,7 @@ picture {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
 }
 
